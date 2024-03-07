@@ -82,6 +82,7 @@ input[type="submit"]:hover {
 /* Media query para proporção 9:16 (vertical/mobile) */
 @media screen and (max-aspect-ratio: 9/16) {
     form {
-        margin-top: 0.01px; /* Distância de 1% da largura do formulário */
+        width: calc(100% - 20px); /* Largura do formulário ajustada */
+        margin: 20px auto; /* Centralizar e adicionar distância de 20px até as extremidades laterais */
     }
 }
