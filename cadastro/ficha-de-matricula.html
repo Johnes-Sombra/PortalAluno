@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/cadastro/estilos/estilo-formulario.css">
-    <title>Ficha de Matricula do Estudante</title>
+    <script src="/cadastro/js/estados-municipios.js"></script>
+    <script src="./js/ficha-matricula.js"></script>
+    <title>Ficha de Matrícula do Estudante</title>
 </head>
 
 <body>
@@ -15,6 +17,22 @@
     </div>
     <h2>Dados Gerais</h2>
     <form>
+        <!-- Campo Estado -->
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="estado">
+            <option value="" selected>Selecione o seu estado</option>
+            <option value="AC">Acre</option>
+            <option value="AM">Amazonas</option>
+            <option value="OUTRO">Outro</option>
+        </select><br>
+
+        <!-- Campo Município -->
+        <label for="municipio">Município:</label><br>
+        <select id="municipio" name="municipio" disabled>
+            <option value="" selected>Selecione o estado primeiro</option>
+        </select><br>
+
+        <!-- Outros campos -->
         <!-- Campo Curso -->
         <label for="curso">Curso:</label><br>
         <input type="text" id="curso" name="curso" placeholder="Insira o nome do curso"><br>
@@ -91,22 +109,6 @@
         <label for="cep">CEP:</label><br>
         <input type="text" id="cep" name="cep" placeholder="Insira o CEP"><br>
 
-        <!-- Campo Município -->
-        <label for="municipio">Município:</label><br>
-        <select id="municipio" name="municipio">
-            <option value="Cruzeiro do Sul">Cruzeiro do Sul</option>
-            <option value="Mâncio Lima">Mâncio Lima</option>
-            <option value="Rodrigues Alves">Rodrigues Alves</option>
-        </select><br>
-
-        <!-- Campo Estado -->
-        <label for="estado">Estado:</label><br>
-        <select id="estado" name="estado">
-            <option value="AC">Acre</option>
-            <option value="AM">Amazonas</option>
-            <option value="OUTRO">Outro</option>
-        </select><br>
-
         <!-- Campo Telefone Pessoal -->
         <label for="telefone_pessoal">Telefone pessoal:</label><br>
         <input type="text" id="telefone_pessoal" name="telefone_pessoal" placeholder="Insira seu telefone pessoal"><br>
@@ -134,19 +136,19 @@
 
         <!-- Campo Alergia a Medicamento -->
         <label for="alergia_medicamento">Alergia a medicamento:</label><br>
-        <input type="text" id="alergia_medicamento_text" name="alergia_medicamento_text" placeholder="Insira informações sobre alergia a medicamento"><br>
+        <input type="text" id="alergia_medicamento_text" name="alergia_medicamento_text" placeholder="Você possui alergia a algum medicamento?"><br>
 
         <!-- Campo Possui Deficiência -->
         <label for="deficiencia">Possui Deficiência:</label><br>
-        <input type="text" id="deficiencia_text" name="deficiencia_text" placeholder="Insira informações sobre a deficiência"><br>
+        <input type="text" id="deficiencia_text" name="deficiencia_text" placeholder="Você possui tem alguma deficiência?"><br>
 
         <!-- Campo Trabalha -->
         <label for="trabalha">Trabalha:</label><br>
-        <input type="text" id="trabalha_text" name="trabalha_text" placeholder="Insira informações sobre o trabalho"><br>
+        <input type="text" id="trabalha_text" name="trabalha_text" placeholder="Você está trabalhando atualmente?"><br>
 
         <!-- Campo Possui CAD Único -->
         <label for="cad_unico">Possui CAD Único:</label><br>
-        <input type="text" id="cad_unico_text" name="cad_unico_text" placeholder="Insira informações sobre o CAD único"><br>
+        <input type="text" id="cad_unico_text" name="cad_unico_text" placeholder="Você possui CAD único?"><br>
 
         <!-- Campo Participante do Programa Bolsa Família -->
         <label for="bolsa_familia">Participante do Programa Bolsa Família:</label><br>
@@ -154,7 +156,6 @@
 
         <input type="submit" value="Enviar">
     </form>
-    <script src="./js/ficha-matricula.js"></script>
 </body>
 
 </html>
