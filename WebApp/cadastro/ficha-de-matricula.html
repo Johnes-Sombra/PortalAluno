@@ -5,134 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/WebApp/estilos/estilo-formulario.css">
-    <script src="/cadastro/js/estados-municipios.js"></script>
-    <script src="./js/ficha-matricula.js"></script>
-    <title>Ficha de Matrícula do Estudante</title>
+    <title>Ficha de Matricula do Estudante</title>
 </head>
 
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="cursos.html">Cursos</a></li>
-            <li><a href="matricula.html">Matrícula</a></li>
-            <li><a href="biblioteca-virtual.html">Biblioteca</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="/WebApp/index.html">Página Inicial</a></li>
+            <li><a href="/WebApp/cursos.html">Cursos</a></li>
+            <li><a href="/WebApp/matricula.html">Matrícula</a></li>
+            <li><a href="/WebApp/biblioteca-virtual.html">Biblioteca</a></li>
+            <li><a href="/WebApp/contato.html">Contato</a></li>
+            <li><a href="/WebApp/sobre.html">Sobre</a></li>
         </ul>
     </nav>
-    
     <h1>Ficha de Matrícula do Estudante</h1>
     <div class="logo">
         <img src="/WebApp/cadastro/imagens/logo-gov-ac-001.png" alt="Logo" width="80" height="80">
     </div>
     <h2>Dados Gerais</h2>
     <form>
-        <!-- Campo Estado -->
+        <label for="curso">Curso:</label><br>
+        <input type="text" id="curso" name="curso" placeholder="Insira o nome do curso"><br>
+
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome_completo" name="nome_completo" placeholder="Insira seu nome completo"><br>
+
+        <input type="text" id="nome_social_text" name="nome_social_text" placeholder="Insira seu nome social (se aplicável)"><br>
+        <input type="radio" id="nome_social_sim" name="nome_social" value="sim"> Sim
+        <input type="radio" id="nome_social_nao" name="nome_social" value="nao"> Não<br>
+        <input type="text" id="nome_social_text" name="nome_social_text"><br>
+
+        <label for="data_nascimento">Data de Nascimento:</label><br>
+        <input type="date" id="data_nascimento" name="data_nascimento"><br>
+
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf"><br>
+
+        <label for="rg">RG:</label><br>
+        <input type="text" id="rg" name="rg"><br>
+
+        <label for="orgao_expedidor">Órgão Expedidor:</label><br>
+        <input type="text" id="orgao_expedidor" name="orgao_expedidor"><br>
+
+        <label for="data_expedicao_rg">Data da Expedição da Identidade:</label><br>
+        <input type="date" id="data_expedicao_rg" name="data_expedicao_rg"><br>
+
+        <label for="titulo_eleitor">Título de Eleitor:</label><br>
+        <input type="text" id="titulo_eleitor" name="titulo_eleitor"><br>
+
+        <label for="nacionalidade">Nacionalidade:</label><br>
+        <input type="text" id="nacionalidade" name="nacionalidade"><br>
+
+        <label for="naturalidade">Naturalidade:</label><br>
+        <input type="text" id="naturalidade" name="naturalidade"><br>
+
+        <label for="nome_pai">Nome do Pai:</label><br>
+        <input type="text" id="nome_pai" name="nome_pai"><br>
+
+        <label for="nome_mae">Nome da Mãe:</label><br>
+        <input type="text" id="nome_mae" name="nome_mae"><br>
+
+        <label for="endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco"><br>
+
+        <label for="numero">Número:</label><br>
+        <input type="text" id="numero" name="numero"><br>
+
+        <label for="bairro">Bairro:</label><br>
+        <input type="text" id="bairro" name="bairro"><br>
+
+        <label for="cep">CEP:</label><br>
+        <input type="text" id="cep" name="cep"><br>
+
         <label for="estado">Estado:</label><br>
         <select id="estado" name="estado">
-            <option value="" selected>Selecione o seu estado</option>
             <option value="AC">Acre</option>
             <option value="AM">Amazonas</option>
             <option value="OUTRO">Outro</option>
         </select><br>
 
-        <!-- Campo Município -->
         <label for="municipio">Município:</label><br>
-        <select id="municipio" name="municipio" disabled>
-            <option value="" selected>Selecione o estado primeiro</option>
+        <select id="municipio" name="municipio">
+            <option value="Cruzeiro do Sul">Cruzeiro do Sul</option>
+            <option value="Mâncio Lima">Mâncio Lima</option>
+            <option value="Rodrigues Alves">Rodrigues Alves</option>
         </select><br>
 
-        <!-- Outros campos -->
-        <!-- Campo Curso -->
-        <label for="curso">Curso:</label><br>
-        <input type="text" id="curso" name="curso" placeholder="Insira o nome do curso"><br>
-
-        <!-- Campo Nome Completo -->
-        <label for="nome">Nome Completo:</label><br>
-        <input type="text" id="nome_completo" name="nome_completo" placeholder="Insira seu nome completo"><br>
-
-        <!-- Campo Nome Social -->
-        <label for="nome_social">Nome Social:</label><br>
-        <input type="text" id="nome_social_text" name="nome_social_text" placeholder="Insira seu nome social (se aplicável)"><br>
-
-        <!-- Campo Sexo -->
-        <label for="sexo">Sexo:</label><br>
-        <select id="sexo" name="sexo">
-            <option value="Feminino">Feminino</option>
-            <option value="Masculino">Masculino</option>
-            <option value="Outro">Outro</option>
-        </select><br>
-
-        <!-- Campo Data de Nascimento -->
-        <label for="data_nascimento">Data de Nascimento:</label><br>
-        <input type="date" id="data_nascimento" name="data_nascimento" placeholder="Insira sua data de nascimento"><br>
-
-        <!-- Campo CPF -->
-        <label for="cpf">CPF:</label><br>
-        <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF"><br>
-
-        <!-- Campo RG -->
-        <label for="rg">RG:</label><br>
-        <input type="text" id="rg" name="rg" placeholder="Insira seu RG"><br>
-
-        <!-- Campo Órgão Expedidor -->
-        <label for="orgao_expedidor">Órgão Expedidor:</label><br>
-        <input type="text" id="orgao_expedidor" name="orgao_expedidor" placeholder="Insira o órgão expedidor do RG"><br>
-
-        <!-- Campo Data da Expedição da Identidade -->
-        <label for="data_expedicao_rg">Data da Expedição da Identidade:</label><br>
-        <input type="date" id="data_expedicao_rg" name="data_expedicao_rg" placeholder="Insira a data de expedição do RG"><br>
-
-        <!-- Campo Título de Eleitor -->
-        <label for="titulo_eleitor">Título de Eleitor:</label><br>
-        <input type="text" id="titulo_eleitor" name="titulo_eleitor" placeholder="Insira seu título de eleitor"><br>
-
-        <!-- Campo Nacionalidade -->
-        <label for="nacionalidade">Nacionalidade:</label><br>
-        <input type="text" id="nacionalidade" name="nacionalidade" placeholder="Insira sua nacionalidade"><br>
-
-        <!-- Campo Naturalidade -->
-        <label for="naturalidade">Naturalidade:</label><br>
-        <input type="text" id="naturalidade" name="naturalidade" placeholder="Insira sua naturalidade"><br>
-
-        <!-- Campo Nome do Pai -->
-        <label for="nome_pai">Nome do Pai:</label><br>
-        <input type="text" id="nome_pai" name="nome_pai" placeholder="Insira o nome do pai"><br>
-
-        <!-- Campo Nome da Mãe -->
-        <label for="nome_mae">Nome da Mãe:</label><br>
-        <input type="text" id="nome_mae" name="nome_mae" placeholder="Insira o nome da mãe"><br>
-
-        <!-- Campo Endereço -->
-        <label for="endereco">Endereço:</label><br>
-        <input type="text" id="endereco" name="endereco" placeholder="Insira seu endereço"><br>
-
-        <!-- Campo Número -->
-        <label for="numero">Número:</label><br>
-        <input type="text" id="numero" name="numero" placeholder="Insira o número do endereço"><br>
-
-        <!-- Campo Bairro -->
-        <label for="bairro">Bairro:</label><br>
-        <input type="text" id="bairro" name="bairro" placeholder="Insira o bairro"><br>
-
-        <!-- Campo CEP -->
-        <label for="cep">CEP:</label><br>
-        <input type="text" id="cep" name="cep" placeholder="Insira o CEP"><br>
-
-        <!-- Campo Telefone Pessoal -->
         <label for="telefone_pessoal">Telefone pessoal:</label><br>
-        <input type="text" id="telefone_pessoal" name="telefone_pessoal" placeholder="Insira seu telefone pessoal"><br>
+        <input type="text" id="telefone_pessoal" name="telefone_pessoal"><br>
 
-        <!-- Campo Telefone para Recado -->
         <label for="telefone_recado">Telefone para recado:</label><br>
-        <input type="text" id="telefone_recado" name="telefone_recado" placeholder="Insira um telefone para recado"><br>
+        <input type="text" id="telefone_recado" name="telefone_recado"><br>
 
-        <!-- Campo E-mail -->
         <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" placeholder="Insira seu e-mail"><br>
+        <input type="email" id="email" name="email"><br>
 
-        <!-- Campo Escolaridade -->
         <label for="escolaridade">Escolaridade:</label><br>
         <select id="escolaridade" name="escolaridade">
             <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
@@ -141,39 +109,57 @@
             <option value="Ensino Médio Completo">Ensino Médio Completo</option>
         </select><br>
 
-        <!-- Campo Cadastro do Credor -->
         <label for="cad_credor">Cadastro do Credor:</label><br>
-        <input type="text" id="cad_credor_text" name="cad_credor_text" placeholder="Insira informações sobre o cadastro do credor"><br>
+        <input type="radio" id="cad_credor_sim" name="cad_credor" value="sim"> Sim
+        <input type="radio" id="cad_credor_nao" name="cad_credor" value="nao"> Não<br>
+        <input type="text" id="cad_credor_text" name="cad_credor_text"><br>
 
-        <!-- Campo Alergia a Medicamento -->
         <label for="alergia_medicamento">Alergia a medicamento:</label><br>
-        <input type="text" id="alergia_medicamento_text" name="alergia_medicamento_text" placeholder="Você possui alergia a algum medicamento?"><br>
+        <input type="radio" id="alergia_medicamento_sim" name="alergia_medicamento" value="sim"> Sim
+        <input type="radio" id="alergia_medicamento_nao" name="alergia_medicamento" value="nao"> Não<br>
+        <input type="text" id="alergia_medicamento_text" name="alergia_medicamento_text"><br>
 
-        <!-- Campo Possui Deficiência -->
         <label for="deficiencia">Possui Deficiência:</label><br>
-        <input type="text" id="deficiencia_text" name="deficiencia_text" placeholder="Você possui tem alguma deficiência?"><br>
+        <input type="radio" id="deficiencia_sim" name="deficiencia" value="sim"> Sim
+        <input type="radio" id="deficiencia_nao" name="deficiencia" value="nao"> Não<br>
+        <input type="text" id="deficiencia_text" name="deficiencia_text"><br>
 
-        <!-- Campo Trabalha -->
         <label for="trabalha">Trabalha:</label><br>
-        <input type="text" id="trabalha_text" name="trabalha_text" placeholder="Você está trabalhando atualmente?"><br>
+        <input type="radio" id="trabalha_sim" name="trabalha" value="sim"> Sim
+        <input type="radio" id="trabalha_nao" name="trabalha" value="nao"> Não<br>
+        <input type="text" id="trabalha_text" name="trabalha_text"><br>
 
-        <!-- Campo Possui CAD Único -->
+        <label for="cor_raca">Cor / Raça:</label><br>
+        <select id="cor_raca" name="cor_raca">
+            <option value="Amarela">Amarela</option>
+            <option value="Branca">Branca</option>
+            <option value="Indígena">Indígena</option>
+            <option value="Parda">Parda</option>
+            <option value="Não declarada">Não declarada</option>
+        </select><br>
+
         <label for="cad_unico">Possui CAD Único:</label><br>
-        <input type="text" id="cad_unico_text" name="cad_unico_text" placeholder="Você possui CAD único?"><br>
+        <input type="radio" id="cad_unico_sim" name="cad_unico" value="sim"> Sim
+        <input type="radio" id="cad_unico_nao" name="cad_unico" value="nao"> Não<br>
+        <input type="text" id="cad_unico_text" name="cad_unico_text"><br>
 
-        <!-- Campo Participante do Programa Bolsa Família -->
         <label for="bolsa_familia">Participante do Programa Bolsa Família:</label><br>
-        <input type="text" id="bolsa_familia_text" name="bolsa_familia_text" placeholder="Insira informações sobre a participação no Bolsa Família"><br>
+        <input type="radio" id="bolsa_familia_sim" name="bolsa_familia" value="sim"> Sim
+        <input type="radio" id="bolsa_familia_nao" name="bolsa_familia" value="nao"> Não<br>
+        <input type="text" id="bolsa_familia_text" name="bolsa_familia_text"><br>
 
         <input type="submit" value="Enviar">
     </form>
+    <script src="./js/ficha-matricula.js"></script>
     <footer class="footer">
         <div class="footer-content">
             <p class="roboto-regular">KTN Software @ <span id="currentYear"></span></p>
         </div>
-    </footer>
-    
-    
-</body>
 
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
 </html>

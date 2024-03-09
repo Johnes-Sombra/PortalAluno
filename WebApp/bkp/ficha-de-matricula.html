@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="matricula.html">Matrícula</a></li>
+            <li><a href="biblioteca-virtual.html">Biblioteca</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
     <h1>Ficha de Matrícula do Estudante</h1>
     <div class="logo">
         <img src="/cadastro/imagens/logo-gov-ac-001.png" alt="Logo" width="80" height="80">
@@ -141,5 +151,15 @@
         <input type="submit" value="Enviar">
     </form>
     <script src="./js/ficha-matricula.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="roboto-regular">KTN Software @ <span id="currentYear"></span></p>
+        </div>
+
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
