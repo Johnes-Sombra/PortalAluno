@@ -23,56 +23,56 @@ html, body {
 }
 
 .footer {
-    background-color: #333; /* Cor de fundo do footer */
-    min-height: 60px; /* Altura mínima do footer */
+    background-color: #333;
+    min-height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Espaçamento interno do footer */
-    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto ao texto */
-    color: white; /* Cor do texto do footer */
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 .footer-content {
     display: flex;
     align-items: center;
-    flex-direction: column; /* Ajusta o conteúdo para coluna */
-    text-align: center; /* Centraliza o texto */
+    flex-direction: column;
+    text-align: center;
 }
 
 .footer-content p {
-    font-size: 16px; /* Tamanho da fonte */
-    margin-bottom: 10px; /* Espaçamento entre linhas */
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .menu {
-    background-color: #333; /* Cor de fundo do menu */
-    padding: 10px 0; /* Espaçamento interno do menu */
-    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto ao menu */
+    background-color: #333;
+    padding: 10px 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .menu ul {
-    list-style-type: none; /* Remove os marcadores de lista */
-    text-align: center; /* Centraliza os itens do menu */
+    list-style-type: none;
+    text-align: center;
 }
 
 .menu ul li {
-    display: inline; /* Exibe os itens do menu em linha */
-    margin-right: 20px; /* Espaçamento entre os itens do menu */
+    display: inline;
+    margin-right: 20px;
 }
 
 .menu ul li a {
-    color: #fff; /* Cor do texto dos itens do menu */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-weight: bold; /* Define a fonte negrito para os links */
-    font-size: 16px; /* Tamanho da fonte dos links */
-    padding: 5px 10px; /* Espaçamento interno dos links */
-    border-radius: 5px; /* Adiciona cantos arredondados aos links */
-    transition: background-color 0.3s ease; /* Adiciona transição suave de cor de fundo */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .menu ul li a:hover {
-    background-color: #555; /* Cor de fundo dos links ao passar o mouse */
+    background-color: #555;
 }
 
 .matricula-container {
@@ -99,6 +99,7 @@ html, body {
 .matricula-box ul {
     list-style-type: disc;
     margin-left: 20px;
+    margin-bottom: 20px; /* Adiciona espaço entre o texto e o botão */
 }
 
 .matricula-box ul li {
@@ -106,7 +107,9 @@ html, body {
 }
 
 .btn {
-    display: inline-block;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -114,6 +117,7 @@ html, body {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto ao texto */
+    text-align: center; /* Centraliza o texto */
 }
 
 .btn:hover {

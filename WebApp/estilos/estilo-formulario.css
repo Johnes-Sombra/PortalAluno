@@ -5,84 +5,78 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 /* Estilo para o corpo do formulário */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    padding: 20px;
+.content {
+    height: calc(100% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Estilo para o contêiner do formulário */
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 50%; /* Largura padrão do formulário */
-    margin: 0 auto; /* Centralizar horizontalmente */
-}
-
-/* Estilo para os títulos do formulário */
-h1, h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilo para os rótulos dos campos */
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-/* Estilo para os campos de entrada de texto */
-input[type="text"],
-input[type="email"],
-input[type="date"],
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+.container {
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-/* Estilo para os campos de entrada de rádio */
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-/* Estilo para o botão de envio */
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* Estilo para centralizar o logotipo */
-.logo {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-/* Media query para proporção 16:9 (horizontal/desktop) */
-@media screen and (min-aspect-ratio: 16/9) {
-    form {
-        margin-top: 20px; /* Distância de 20% da largura do formulário */
-    }
+/* Estilo para o menu de navegação */
+.menu {
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 10px 0; /* Espaçamento interno do menu */
+    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto ao menu */
 }
 
-/* Media query para proporção 9:16 (vertical/mobile) */
-@media screen and (max-aspect-ratio: 9/16) {
-    form {
-        width: calc(100% - 20px); /* Largura do formulário ajustada */
-        margin: 20px auto; /* Centralizar e adicionar distância de 20px até as extremidades laterais */
-    }
+.menu ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    text-align: center; /* Centraliza os itens do menu */
 }
+
+.menu ul li {
+    display: inline; /* Exibe os itens do menu em linha */
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
+.menu ul li a {
+    color: #fff; /* Cor do texto dos itens do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Define a fonte negrito para os links */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    padding: 5px 10px; /* Espaçamento interno dos links */
+    border-radius: 5px; /* Adiciona cantos arredondados aos links */
+    transition: background-color 0.3s ease; /* Adiciona transição suave de cor de fundo */
+}
+
+.menu ul li a:hover {
+    background-color: #555; /* Cor de fundo dos links ao passar o mouse */
+}
+
+/* Estilo para o rodapé */
+.footer {
+    background-color: #333; /* Cor de fundo do footer */
+    min-height: 60px; /* Altura mínima do footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Espaçamento interno do footer */
+    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto ao texto */
+    color: white; /* Cor do texto do footer */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Ajusta o conteúdo para coluna */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer-content p {
+    font-size: 16px; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaçamento entre linhas */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
