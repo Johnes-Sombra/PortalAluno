@@ -7,17 +7,14 @@ html, body {
     height: 100%;
 }
 .content {
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 60px; /* Altura do footer */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px; /* Altura do footer */
-    background-color: #333;
-    color: #fff;
+.container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    line-height: 60px;
 }
