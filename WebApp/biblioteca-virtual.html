@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Virtual</title>
     <link rel="stylesheet" href="/WebApp/estilos/estilo-principal.css">
+    <link rel="stylesheet" href="/WebApp/estilos/estilo-biblioteca.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
@@ -41,14 +42,9 @@
         </div>
     </footer>
 
+    <script src="/WebApp/biblioteca/js/biblioteca.js"></script>
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        function mostrarApostilas(categoria) {
-            // Aqui você pode implementar a lógica para carregar os arquivos PDF da categoria selecionada
-            // Por enquanto, vamos apenas mostrar uma mensagem de exemplo
-            document.getElementById('apostilas').innerHTML = `<p>Mostrando apostilas da categoria: ${categoria}</p>`;
-        }
     </script>
 </body>
 </html>

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif; /* Definindo a fonte Roboto para todo o documento */
+}
+
+.content {
+    height: calc(100% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Novos estilos para a div da biblioteca */
+
+.biblioteca {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.categorias {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos sejam distribuídos em várias linhas */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+}
+
+.categorias li {
+    margin-bottom: 10px;
+    width: calc(50% - 10px); /* Define a largura dos botões de categoria com espaço entre eles */
+    margin-right: 10px; /* Adiciona espaço entre os botões */
+}
+
+.categorias li:nth-child(2n) {
+    margin-right: 0; /* Remove a margem direita do último botão de cada linha */
+}
+
+.categorias li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px; /* Aumenta o espaçamento interno */
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.categorias li a:hover {
+    background-color: #048D3E;
+    color: #fff;
+}
+
+#apostilas {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #333;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    background-color: #333;
+    padding: 10px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
