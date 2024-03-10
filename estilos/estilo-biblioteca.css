@@ -23,13 +23,7 @@ html, body {
     text-align: center;
 }
 
-/* Novos estilos para a div da biblioteca */
-
-.biblioteca {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
+/* Estilos para a lista de categorias */
 .categorias {
     list-style-type: none;
     padding: 0;
