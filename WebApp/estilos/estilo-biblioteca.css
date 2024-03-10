@@ -50,19 +50,19 @@ html, body {
 }
 
 .categorias li a {
-    color: #333;
+    color: #333; /* Cor do texto padrão */
     text-decoration: none;
     font-size: 18px;
     padding: 15px 20px; /* Aumenta o espaçamento interno */
     display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para a cor de fundo e cor do texto */
 }
 
 .categorias li a:hover {
     background-color: #048D3E;
-    color: #fff;
+    color: #fff; /* Altera a cor do texto para branco ao passar o mouse */
 }
 
 #apostilas {
