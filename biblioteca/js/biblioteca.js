@@ -2,60 +2,31 @@ function mostrarApostilas(categoria) {
     // Limpa o conteúdo anterior
     document.getElementById('apostilas').innerHTML = '';
 
-    // Cria uma nova requisição XMLHttpRequest
-    var xhr = new XMLHttpRequest();
+    // Cria uma lista não ordenada (ul)
+    var ul = document.createElement('ul');
 
-    // Define o método GET e a URL para buscar os arquivos PDF da categoria selecionada
-    xhr.open('GET', './biblioteca/apostilas/' + categoria);
+    // Percorre os arquivos PDF da categoria selecionada
+    var files = getFiles(categoria);
+    files.forEach(function(file) {
+        // Cria um link para o arquivo PDF
+        var link = document.createElement('a');
+        link.href = './biblioteca/apostilas/' + categoria + '/' + file;
+        link.textContent = file;
 
-    // Define a função a ser executada quando a requisição for concluída
-    xhr.onload = function() {
-        // Verifica se o status da requisição é 200 (OK)
-        if (xhr.status === 200) {
-            // Transforma a resposta da requisição em um objeto JSON
-            var files = JSON.parse(xhr.responseText);
+        // Cria um item de lista (li) e adiciona o link a ele
+        var li = document.createElement('li');
+        li.appendChild(link);
 
-            // Verifica se a lista de arquivos não está vazia
-            if (files.length > 0) {
-                // Cria uma lista não ordenada (ul)
-                var ul = document.createElement('ul');
+        // Adiciona o item de lista à lista não ordenada
+        ul.appendChild(li);
+    });
 
-                // Itera sobre a lista de arquivos e cria um link (a) para cada arquivo
-                files.forEach(function(file) {
-                    // Cria um novo elemento de link (a)
-                    var link = document.createElement('a');
-                    
-                    // Define o atributo href do link com o caminho do arquivo PDF
-                    link.href = './biblioteca/apostilas/' + categoria + '/' + file;
-                    
-                    // Define o texto do link com o nome do arquivo
-                    link.textContent = file;
-                    
-                    // Define o atributo target para abrir o link em uma nova aba
-                    link.setAttribute('target', '_blank');
-                    
-                    // Cria um novo item de lista (li)
-                    var li = document.createElement('li');
-                    
-                    // Adiciona o link ao item de lista
-                    li.appendChild(link);
-                    
-                    // Adiciona o item de lista à lista não ordenada
-                    ul.appendChild(li);
-                });
+    // Adiciona a lista de arquivos ao elemento com o id 'apostilas'
+    document.getElementById('apostilas').appendChild(ul);
+}
 
-                // Adiciona a lista de arquivos ao elemento com o id 'apostilas'
-                document.getElementById('apostilas').appendChild(ul);
-            } else {
-                // Se a lista de arquivos estiver vazia, exibe uma mensagem
-                document.getElementById('apostilas').innerHTML = '<p>Nenhum arquivo disponível para esta categoria.</p>';
-            }
-        } else {
-            // Se a requisição falhar, exibe uma mensagem de erro
-            console.error('Erro ao carregar arquivos.');
-        }
-    };
-
-    // Envia a requisição
-    xhr.send();
+// Função fictícia para obter os arquivos da categoria (substitua esta função pela lógica real de obtenção de arquivos)
+function getFiles(categoria) {
+    // Retorne uma lista de arquivos fictícia para a categoria fornecida
+    return ['arquivo1.pdf', 'arquivo2.pdf', 'arquivo3.pdf'];
 }
