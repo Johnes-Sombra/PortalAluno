@@ -6,7 +6,7 @@ function mostrarApostilas(categoria) {
     var xhr = new XMLHttpRequest();
 
     // Define o método GET e a URL para buscar os arquivos PDF da categoria selecionada
-    xhr.open('GET', '/WebApp/biblioteca/apostilas/' + categoria);
+    xhr.open('GET', './biblioteca/apostilas/' + categoria);
 
     // Define a função a ser executada quando a requisição for concluída
     xhr.onload = function() {
@@ -26,7 +26,7 @@ function mostrarApostilas(categoria) {
                     var link = document.createElement('a');
                     
                     // Define o atributo href do link com o caminho do arquivo PDF
-                    link.href = '/WebApp/biblioteca/apostilas/' + categoria + '/' + file;
+                    link.href = './biblioteca/apostilas/' + categoria + '/' + file;
                     
                     // Define o texto do link com o nome do arquivo
                     link.textContent = file;
