@@ -23,7 +23,15 @@
     
     <div class="content">
         <div class="container">
+            <h2>Categorias de Apostilas</h2>
+            <ul class="categorias">
+                <li><a href="#" onclick="mostrarApostilas('ambiente-saude')">Ambiente e Saúde</a></li>
+                <li><a href="#" onclick="mostrarApostilas('gestao-negocios')">Gestão e Negócios</a></li>
+                <li><a href="#" onclick="mostrarApostilas('informacao-comunicacao')">Informação e Comunicação</a></li>
+                <li><a href="#" onclick="mostrarApostilas('recursos-naturais')">Recursos Naturais</a></li>
+            </ul>
 
+            <div id="apostilas"></div>
         </div>
     </div>
     
@@ -35,6 +43,12 @@
 
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function mostrarApostilas(categoria) {
+            // Aqui você pode implementar a lógica para carregar os arquivos PDF da categoria selecionada
+            // Por enquanto, vamos apenas mostrar uma mensagem de exemplo
+            document.getElementById('apostilas').innerHTML = `<p>Mostrando apostilas da categoria: ${categoria}</p>`;
+        }
     </script>
 </body>
 </html>
