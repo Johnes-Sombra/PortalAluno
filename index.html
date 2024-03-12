@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./estilos/estilo-principal.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        /* Adicionamos um estilo para o formulário de login */
     </style>
 </head>
 <body>
@@ -23,7 +24,16 @@
     
     <div class="content">
         <div class="container">
-            <img src="./imagens/logos/logo-ktn.png" alt="Logo KTN Software">
+            <img src="./imagens/logos/logo-ktn.png" alt="Logo KTN Software" width="80" height="80">
+            
+            <!-- Formulário de login -->
+            <!-- <form class="login-form" id="loginForm"> -->
+            <form class="login-form" id="loginForm" action="login.php" method="POST">
+                <h2>Faça login</h2>
+                <input type="text" placeholder="Nome de usuário" id="username" required>
+                <input type="password" placeholder="Senha" id="password" required>
+                <button type="submit">Entrar</button>
+            </form>
         </div>
     </div>
     
