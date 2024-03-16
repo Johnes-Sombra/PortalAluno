@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo</title>
     <link rel="stylesheet" href="/estilos/estilo-principal.css">
@@ -12,10 +13,11 @@
         <div class="container">
             <img src="/imagens/logos/logo-ktn.png" alt="Logo KTN Software" width="80" height="80">
             <!-- Formulário de login -->
+            <!-- <form class="login-form" id="loginForm"> -->
             <form class="login-form" id="loginForm" action="login.php" method="POST">
                 <h2>Faça login</h2>
-                <input type="text" placeholder="Nome de usuário" name="username" required>
-                <input type="password" placeholder="Senha" name="password" required>
+                <input type="text" placeholder="Nome de usuário" id="username" required>
+                <input type="password" placeholder="Senha" id="password" required>
                 <button type="submit">Entrar</button>
             </form>
         </div>
