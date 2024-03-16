@@ -37,13 +37,17 @@
     <footer class="footer">
         <div class="footer-content">
             <!-- Informações de rodapé -->
-            <p class="roboto-regular">KTN Software @ <?php echo date("Y"); ?></p>
+            <p class="roboto-regular">KTN Software @ <span id="currentYear"></span></p>
         </div>
     </footer>
 
     <!-- Script JavaScript para atualizar o ano no rodapé -->
     <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Aguarda o carregamento completo do documento
+        document.addEventListener("DOMContentLoaded", function() {
+            // Atualiza o ano atual no elemento com o ID "currentYear"
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
     </script>
 </body>
 </html>
