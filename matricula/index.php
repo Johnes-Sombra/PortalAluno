@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça sua matrícula agora mesmo!</title>
-    <link rel="stylesheet" href="./estilos/estilo-matricula.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    </style>
+    <link rel="stylesheet" href="./_css/estilo-matricula.css">
 </head>
 <body>
     <nav class="menu">
@@ -34,7 +31,7 @@
                 <li>Histórico escolar e certificado de conclusão do ensino médio;</li>
                 <li>Certidão de nascimento ou casamento;</li>
             </ul>
-            <a href="./cadastro/ficha-de-matricula.php" class="btn">Realizar Matrícula</a>
+            <a href="./matricula.php" class="btn">Realizar Matrícula</a>
         </div>
     </div>
     

@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/estilo-formulario.css">
-    <script src="./cadastro/js/ficha-matricula.js"></script>
+    <link rel="stylesheet" href="./_css/estilo-formulario.css">
     <title>Ficha de Matricula do Estudante</title>
 </head>
 
@@ -47,6 +46,7 @@
             <input type="submit" value="Enviar">
         </form>
     </section>
+    <script src="./cadastro/js/ficha-matricula.js"></script>
 
     <footer class="footer">
         <div class="footer-content">
