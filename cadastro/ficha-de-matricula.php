@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/estilo-formulario.css">
+    <link rel="stylesheet" href="../estilos/estilo-formulario.css">
     <script src="./cadastro/js/ficha-matricula.js"></script>
     <title>Ficha de Matricula do Estudante</title>
 </head>
@@ -24,7 +24,7 @@
     <header>
         <h1>Ficha de Matrícula do Estudante</h1>
         <div class="logo">
-            <img src="./cadastro/imagens/logo-gov-ac-001.png" alt="Logo" width="80" height="80">
+            <img src="./imagens/logo-gov-ac-001.png" alt="Logo" width="80" height="80">
         </div>
     </header>
 
