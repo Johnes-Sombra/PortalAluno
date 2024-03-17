@@ -23,30 +23,20 @@
     <header>
         <h1>Ficha de Matrícula do Estudante</h1>
         <div class="logo">
-            <img src="./cadastro/imagens/logo-gov-ac-001.png" alt="Logo" width="80" height="80">
+            <img src="./_img/logo-gov-ac-001.png" alt="Logo" width="80" height="80">
         </div>
     </header>
 
     <section id="dados_gerais">
         <h2>Dados Gerais</h2>
         <form action="processar_formulario.php" method="post">
-            <label for="curso">Curso:</label><br>
-            <input type="text" id="curso" name="curso" placeholder="Insira o nome do curso" required><br>
+            <!-- Campos do formulário aqui -->
 
-            <label for="nome_completo">Nome Completo:</label><br>
-            <input type="text" id="nome_completo" name="nome_completo" placeholder="Insira seu nome completo" required><br>
-
-            <input type="text" id="nome_social_text" name="nome_social_text" placeholder="Insira seu nome social (se aplicável)"><br>
-
-            <label for="data_nascimento">Data de Nascimento:</label><br>
-            <input type="date" id="data_nascimento" name="data_nascimento" required><br>
-            
-            <!-- Restante dos campos do formulário -->
-            
             <input type="submit" value="Enviar">
+            <input type="button" id="limpar_campos" value="Limpar Campos">
         </form>
     </section>
-    <script src="./cadastro/js/ficha-matricula.js"></script>
+    <script src="./_js/ficha-matricula.js"></script>
 
     <footer class="footer">
         <div class="footer-content">
