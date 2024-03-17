@@ -23,7 +23,7 @@
     <div class="content">
         <div class="container">
 
-            <img src="./ktn-branco.png" alt="Logo KTN Software" width="80" height="80">
+            <img src="./imagens/logos/ktn-branco.png" alt="Logo KTN Software" width="80" height="80">
             
             <!-- Formulário de login -->
             <form class="login-form" id="loginForm" action="login.php" method="POST">
