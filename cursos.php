@@ -9,7 +9,7 @@
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="index.php">Página Inicial</a></li>
+            <li><a href="www.ktnsoftware.com.br">Página Inicial</a></li>
             <li><a href="./cursos.php">Cursos</a></li>
             <li><a href="./matricula.php">Matrícula</a></li>
             <li><a href="./biblioteca-digital.php">Biblioteca</a></li>
