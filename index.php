@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo</title>
-    <link rel="stylesheet" href="./estilos/estilo-principal.css">
+    <link rel="stylesheet" href="./_css/estilo-principal.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -23,7 +23,7 @@
     <div class="content">
         <div class="container">
 
-            <img src="./imagens/logos/ktn-branco.png" alt="Logo KTN Software" width="80" height="80">
+            <img src="./_img/logos/ktn-branco.png" alt="KTN Software" width="80" height="80">
             
             <!-- Formulário de login -->
             <form class="login-form" id="loginForm" action="login.php" method="POST">
