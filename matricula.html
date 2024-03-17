@@ -34,7 +34,7 @@
                 <li>Histórico escolar e certificado de conclusão do ensino médio;</li>
                 <li>Certidão de nascimento ou casamento;</li>
             </ul>
-            <a href="./cadastro/ficha-de-matricula.html" class="btn">Realizar Matrícula</a>
+            <a href="./cadastro/ficha-de-matricula.php" class="btn">Realizar Matrícula</a>
         </div>
     </div>
     
