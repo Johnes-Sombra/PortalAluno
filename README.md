@@ -1,4 +1,4 @@
-# Documentação do Aplicativo de Cadastro de Alunos
+# Documentação da página web de Portal do Alunos
 
 1. Introdução
 
