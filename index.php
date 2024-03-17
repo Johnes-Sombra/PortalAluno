@@ -10,7 +10,7 @@
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="./index.html">Página Inicial</a></li>
+            <li><a href="./index.php">Página Inicial</a></li>
             <li><a href="./cursos.php">Cursos</a></li>
             <li><a href="./matricula.php">Matrícula</a></li>
             <li><a href="./biblioteca-digital.php">Biblioteca</a></li>
