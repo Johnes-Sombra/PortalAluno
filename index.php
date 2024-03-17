@@ -11,11 +11,11 @@
     <nav class="menu">
         <ul>
             <li><a href="./index.html">Página Inicial</a></li>
-            <li><a href="./cursos.html">Cursos</a></li>
-            <li><a href="./matricula.html">Matrícula</a></li>
-            <li><a href="./biblioteca-virtual.html">Biblioteca</a></li>
-            <li><a href="./contato.html">Contato</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./cursos.php">Cursos</a></li>
+            <li><a href="./matricula.php">Matrícula</a></li>
+            <li><a href="./biblioteca-digital.php">Biblioteca</a></li>
+            <li><a href="./contato.php">Contato</a></li>
+            <li><a href="./sobre.php">Sobre</a></li>
         </ul>
     </nav>
     <!-- Conteúdo da página -->
