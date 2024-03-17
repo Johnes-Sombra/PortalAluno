@@ -31,10 +31,12 @@ h1, h2 {
 label {
     font-weight: bold;
     margin-bottom: 5px;
+    display: block;
 }
 
 /* Estilo para os campos de entrada de texto */
 input[type="text"],
+input[type="email"],
 input[type="date"],
 select {
     width: 100%;
@@ -45,24 +47,10 @@ select {
     box-sizing: border-box;
 }
 
-/* Estilo para o botão de envio */
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* Estilo para o botão de limpar campos */
+/* Estilo para o botão de envio e limpar campos */
+input[type="submit"],
 input[type="button"] {
-    background-color: #ff0000;
+    background-color: #4CAF50;
     color: white;
     padding: 15px 20px;
     border: none;
@@ -72,13 +60,29 @@ input[type="button"] {
     margin-top: 10px;
 }
 
+input[type="submit"]:hover,
 input[type="button"]:hover {
-    background-color: #cc0000;
+    background-color: #45a049;
 }
 
 /* Estilo para centralizar o logotipo */
 .logo {
     text-align: center;
+}
+
+/* Media query para proporção 16:9 (horizontal/desktop) */
+@media screen and (min-aspect-ratio: 16/9) {
+    form {
+        margin-top: 20px; /* Distância de 20% da largura do formulário */
+    }
+}
+
+/* Media query para proporção 9:16 (vertical/mobile) */
+@media screen and (max-aspect-ratio: 9/16) {
+    form {
+        width: calc(100% - 20px); /* Largura do formulário ajustada */
+        margin: 20px auto; /* Centralizar e adicionar distância de 20px até as extremidades laterais */
+    }
 }
 
 /* Estilo para o menu de navegação */

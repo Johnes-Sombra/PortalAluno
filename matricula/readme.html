@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação do Projeto</title>
+    <style>
+        /* Estilo para o corpo do documento */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        /* Estilo para os cabeçalhos */
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para os parágrafos */
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Estilo para as listas */
+        ul {
+            margin-bottom: 15px;
+            margin-left: 30px;
+        }
+
+        /* Estilo para o código */
+        code {
+            font-family: Consolas, monospace;
+            background-color: #f9f9f9;
+            padding: 2px 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Estilo para o footer */
+        .footer {
+            background-color: #333;
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-family: "Roboto", sans-serif;
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Documentação do Projeto: Ficha de Matrícula do Estudante - By: KTN Software</h1>
+
+    <h2>Introdução</h2>
+    <p>Esta é a documentação para o projeto "Ficha de Matrícula do Estudante". O projeto consiste em um formulário HTML para coletar informações de matrícula de estudantes, com validações em JavaScript e possibilidade de processamento dos dados em um servidor PHP para armazenamento em um banco de dados MySQL.</p>
+
+    <h2>Arquivos do Projeto</h2>
+    <ul>
+        <li><code>index.html</code>: Arquivo principal contendo o formulário de matrícula.</li>
+        <li><code>estilo-formulario.css</code>: Arquivo CSS para estilizar o formulário e a página.</li>
+        <li><code>ficha-matricula.js</code>: Arquivo JavaScript para adicionar interatividade ao formulário.</li>
+        <li><code>processar_formulario.php</code>: Script PHP para processar os dados do formulário e inseri-los no banco de dados MySQL.</li>
+        <li><code>readme.html</code>: Este arquivo, contendo a documentação do projeto.</li>
+    </ul>
+
+    <h2>Configuração e Funcionamento</h2>
+    <p>Para configurar e fazer o projeto funcionar corretamente, siga estas etapas:</p>
+    <ol>
+        <li>Faça o download dos arquivos do projeto para o seu ambiente de desenvolvimento.</li>
+        <li>Configure um servidor web local com suporte a PHP e MySQL. Você pode usar ferramentas como XAMPP, WAMP ou MAMP para isso.</li>
+        <li>Crie um banco de dados MySQL e uma tabela para armazenar os dados do formulário.</li>
+        <li>Atualize as credenciais do banco de dados no arquivo <code>processar_formulario.php</code>.</li>
+        <li>Abra o arquivo <code>index.html</code> em um navegador web para acessar o formulário de matrícula e preencha os campos necessários.</li>
+        <li>Envie o formulário para processamento e verifique se os dados foram corretamente inseridos no banco de dados.</li>
+    </ol>
+
+    <p>Com essas etapas concluídas, o projeto estará configurado e funcionando corretamente, permitindo a coleta e armazenamento dos dados de matrícula dos estudantes.</p>
+
+    <p>Para qualquer dúvida ou problema, consulte a documentação ou entre em contato com o administrador do sistema.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="roboto-regular">KTN Software @ <span id="currentYear"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
