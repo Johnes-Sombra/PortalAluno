@@ -23,7 +23,7 @@
     <header>
         <h1>Ficha de Matrícula do Estudante</h1>
         <div class="logo">
-            <img src="./cadastro/imagens/logo-gov-ac-001.png" alt="Logo" width="80" height="80">
+            <img src="./_img/logo-gov-ac-001.png" alt="Logo" width="80" height="80">
         </div>
     </header>
 
