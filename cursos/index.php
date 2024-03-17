@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conheça os cursos ofertados</title>
-    <link rel="stylesheet" href="./estilos/estilo-cursos.css">
+    <link rel="stylesheet" href="./_css/estilo-cursos.css">
 </head>
 <body>
     <nav class="menu">
         <ul>
             <li><a href="/">Página Inicial</a></li>
-            <li><a href="./cursos.php">Cursos</a></li>
-            <li><a href="./matricula.php">Matrícula</a></li>
-            <li><a href="./biblioteca-digital.php">Biblioteca</a></li>
-            <li><a href="./contato.php">Contato</a></li>
-            <li><a href="./sobre.php">Sobre</a></li>
+            <li><a href="./cursos">Cursos</a></li>
+            <li><a href="./matricula">Matrícula</a></li>
+            <li><a href="./biblioteca">Biblioteca</a></li>
+            <li><a href="./contato">Contato</a></li>
+            <li><a href="./sobre">Sobre</a></li>
         </ul>
     </nav>
     
