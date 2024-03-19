@@ -13,6 +13,12 @@ html, body {
     height: 100%; /* Define a altura do HTML e do corpo como 100% */
 }
 
+.centered-image {
+    display: block; /* Define como elemento de bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+
 /* Estilos para a área de conteúdo */
 .content {
     height: calc(100% - 20px); /* Calcula a altura da área de conteúdo subtraindo 20px */
