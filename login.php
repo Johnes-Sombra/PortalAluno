@@ -1,30 +1,51 @@
-<?php
-// Conexão com o banco de dados Access
-try {
-    $db = new PDO("odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};Dbq=./dados-alunos/login-alunos.accdb");
-} catch (PDOException $e) {
-    echo 'Erro ao conectar ao banco de dados: ' . $e->getMessage();
-    exit();
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="./_css/estilo-principal.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="/">Página Inicial</a></li>
+            <li><a href="./cursos">Cursos</a></li>
+            <li><a href="./matricula">Matrícula</a></li>
+            <li><a href="./biblioteca">Biblioteca</a></li>
+            <li><a href="./contato">Contato</a></li>
+            <li><a href="./sobre">Sobre</a></li>
+        </ul>
+    </nav>
 
-// Verifica se o formulário foi submetido
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+    <!-- Conteúdo da página -->
+    <div class="content">
+        <div class="container">
+
+            <img src="./_img/logos/ktn-branco.png" alt="KTN Software" width="80" height="80">
+            
+            <!-- Formulário de login -->
+            <form class="login-form" id="loginForm" action="login.php" method="POST">
+                <h2>Faça login</h2>
+                <input type="text" placeholder="Nome de usuário" id="username" required>
+                <input type="password" placeholder="Senha" id="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+            
+        </div>
+    </div>
     
-    // Consulta o banco de dados para verificar as credenciais
-    $query = $db->prepare("SELECT * FROM usuarios WHERE username = :username AND password = :password");
-    $query->bindParam(":username", $username);
-    $query->bindParam(":password", $password);
-    $query->execute();
-    
-    // Verifica se há algum resultado
-    if ($query->rowCount() > 0) {
-        // Autenticação bem-sucedida
-        echo "Login bem-sucedido!";
-    } else {
-        // Autenticação falhou
-        echo "Nome de usuário ou senha inválidos.";
-    }
-}
-?>
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="roboto-regular">KTN Software @ <span id="currentYear"></span></p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript para atualizar o ano no rodapé -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
