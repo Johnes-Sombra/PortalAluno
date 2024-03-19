@@ -21,11 +21,15 @@
 
     <!-- Conteúdo da página -->
 <!-- Conteúdo da página -->
+    <!-- Conteúdo da página -->
+    <!-- Conteúdo da página -->
     <div class="content">
-        <img src="./4321654987wp.jpg" alt="KTN Software" width="1920" height="1080" class="centered-image">
+        <div class="image-container">
+            <img src="./4321654987wp.jpg" alt="KTN Software" class="full-width-image">
+        </div>
     </div>
 
-    
+
     <!-- Rodapé da página -->
     <footer class="footer">
         <div class="footer-content">
