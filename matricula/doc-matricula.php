@@ -22,14 +22,16 @@
         <div class="matricula-box">
             <h2>Documentos necessários para a Matrícula:</h2>
             <ul>
-                <li>Documento de identificação com foto: RG, CNH ou Carteira de Trabalho;</li>
-                <li>CPF;</li>
-                <li>Título de eleitor e comprovante eleitoral (para pessoas na faixa etária obrigatória);</li>
-                <li>Comprovante de residência: conta de luz ou água;</li>
-                <li>Certificado de conclusão do Ensino Médio ou histórico escolar;</li>
-                <li>Comprovante de Quitação com o Serviço Militar (para homens);</li>
-                <li>Histórico escolar e certificado de conclusão do ensino médio;</li>
-                <li>Certidão de nascimento ou casamento;</li>
+                <li>Foto 3x4;</li>
+                <li>Documentos de identidade do estudante;</li>
+                <li>Documentos de identidade do responsável (Se for menor de idade);</li>
+                <li>Título de eleitor (para pessoas na faixa etária obrigatória);</li>
+                <li>Comprovante de Endereço;</li>
+                <li>Cacastro do Credor;</li>
+                <li>Comprovante de Escolaridade;</li>
+                <li>Endereço de E-mail para contato;</li>
+                <li>Telefone para contato;</li>
+                <li>Telefone para recados;</li>
             </ul>
             <a href="./matricula.php" class="btn">Realizar Matrícula</a>
         </div>
