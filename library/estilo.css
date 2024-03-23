@@ -1,0 +1,18 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#categorias {
+    margin-top: 50px;
+}
+
+.categoria {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
