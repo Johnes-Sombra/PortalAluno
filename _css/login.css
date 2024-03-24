@@ -13,6 +13,13 @@ html, body {
     height: 100%; /* Define a altura do HTML e do corpo como 100% */
 }
 
+/* Estilos para o menu */
+.menu {
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 10px 0; /* Adiciona preenchimento interno */
+    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto */
+}
+
 .menu ul {
     list-style-type: none; /* Remove marcadores de lista */
     text-align: center; /* Centraliza horizontalmente */
@@ -37,19 +44,6 @@ html, body {
     background-color: #555; /* Cor de fundo ao passar o mouse */
 }
 
-.image-container {
-    max-width: 1000px; /* Largura máxima do contêiner da imagem */
-    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço acima e abaixo do contêiner */
-    overflow: hidden; /* Evita que a imagem ultrapasse os limites do contêiner */
-    display: flex; /* Usa flexbox para centralizar verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-}
-
-.full-width-image {
-    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
-    display: block; /* Define como elemento de bloco */
-}
-
 /* Estilos para a área de conteúdo */
 .content {
     height: calc(100% - 20px); /* Calcula a altura da área de conteúdo subtraindo 20px */
@@ -67,12 +61,46 @@ html, body {
     background-color: #acacac; /* Define a cor de fundo como cinza claro */
 }
 
-/* Estilos para o menu */
-.menu {
-    background-color: #333; /* Cor de fundo do menu */
-    padding: 10px 0; /* Adiciona preenchimento interno */
+
+
+
+/* Estilos para o formulário de login */
+.login-form {
+    max-width: 300px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: #dddddd; /* Cor de fundo */
+    padding: 20px; /* Adiciona preenchimento interno */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
     font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto */
 }
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%; /* Define a largura como 100% */
+    padding: 10px; /* Adiciona preenchimento interno */
+    margin: 8px 0; /* Adiciona margem */
+    display: inline-block; /* Exibe em linha */
+    border: 1px solid #ccc; /* Adiciona borda */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    box-sizing: border-box; /* Calcula largura incluindo preenchimento e borda */
+}
+
+.login-form button {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 14px 20px; /* Adiciona preenchimento interno */
+    margin: 8px 0; /* Adiciona margem */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    cursor: pointer; /* Altera o cursor para apontador */
+    width: 100%; /* Define a largura como 100% */
+}
+
+.login-form button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
 
 /* Estilos para o rodapé */
 .footer {

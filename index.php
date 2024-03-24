@@ -20,22 +20,16 @@
     </nav>
 
     <!-- Conteúdo da página -->
+<!-- Conteúdo da página -->
+    <!-- Conteúdo da página -->
+    <!-- Conteúdo da página -->
     <div class="content">
-        <div class="container">
-
-            <img src="./_img/logos/ktn-branco.png" alt="KTN Software" width="80" height="80">
-            
-            <!-- Formulário de login -->
-            <form class="login-form" id="loginForm" action="login.php" method="POST">
-                <h2>Faça login</h2>
-                <input type="text" placeholder="Nome de usuário" id="username" required>
-                <input type="password" placeholder="Senha" id="password" required>
-                <button type="submit">Entrar</button>
-            </form>
-            
+        <div class="image-container">
+            <img src="./4321654987wp.jpg" alt="KTN Software" class="full-width-image">
         </div>
     </div>
-    
+
+
     <!-- Rodapé da página -->
     <footer class="footer">
         <div class="footer-content">
