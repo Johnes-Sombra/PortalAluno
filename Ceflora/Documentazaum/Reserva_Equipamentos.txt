@@ -1,0 +1,38 @@
+Crie um Projeto Web para Reserva de Equipamentos de Informática em um banco de dados
+Crie o arquivo "index.php" com código HTML para ser a estrutura html da página inicial;
+Crie um arquivo "estilo.css" com código CSS para estilizar a página inicial;
+Crie um arquivo JavaScript se necessário;
+Crie códigos para arquivos PHP para conexão com o banco de dados e outras funções;
+
+A Página Inicial deve ter um formulário para preencher campos de reserva de equipamentos;
+Título do Formulário: "Reserva de Equipamentos"
+
+Campo "Usuário" com o menu dropdown com as opções dos nomes dos professores;
+Campo "Equipamentos" com menu dropdown com as opções: "Projetor Epson 1A", Projetor Epson 3A", "Notebook Lenovo IdeaPad 3", "Caixa de ;
+Campo "Curso" para digitar o número do CPF;
+Campo "Data de Utilização" para digitar o endereço do estudante;
+Campo "Turno" para digitar o número da casa do estudante;
+Campo "Data de Devolução" para digitar o bairro do estudante;
+Campo "Status" para digitar o número de celular;
+
+Nome das colunas no Banco de Dados
+"usuario" - Campo "Usuário"
+"equip" - Campo "Equipamento"
+"curso" - Campo "Curso"
+"data_utilizar" - Campo "Data de Utilização"
+"turno" - Campo "Turno"
+"data_devol" - Campo "Data de Devolução"
+"status" - Campo "Status"
+
+Configurações PHP para conectar ao banco de dados:
+servidor "localhost"
+usuário "ceflora"
+senha "123o456o"
+banco "biblioteca"
+tabela "reserva"
+
+-----------------------------------------------------
+
+Função para verificar se o equipamento está disponivel em determinado dia e horário especificado
+A função deve verificar a disponibilidade de determinado equipamento de acordo com o horário e dia especificado
+Um

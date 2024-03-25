@@ -1,0 +1,24 @@
+Crie um Projeto Web para Reserva de Equipamentos de Informática em um banco de dados
+Crie o arquivo "index.php" com código HTML para ser a estrutura html da página inicial;
+Crie um arquivo "estilo.css" com código CSS para estilizar a página inicial;
+Crie um arquivo JavaScript se necessário;
+Crie códigos para arquivos PHP para conexão com o banco de dados e outras funções;
+
+A Página Inicial deve ter um formulário para cadastro de equipamentos;
+Título do Formulário: "Cadastro de Equipamentos"
+
+Campo "Equipamento" para digitar o nome do equipamento;
+Campo "Descrição" para digitar uma descrição do equipamento;
+Campo "Acessórios" para digitar o número do CPF;
+
+Nome das colunas no Banco de Dados
+"equipamento" - Campo "equipamentos"
+"descricao" - Campo "descricao"
+"acessorios" - Campo "acessorios"
+
+Configurações PHP para conectar ao banco de dados:
+servidor "localhost"
+usuário "ceflora"
+senha "123o456o"
+banco "biblioteca"
+tabela "equipamentos"

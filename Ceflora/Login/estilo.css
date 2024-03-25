@@ -1,0 +1,123 @@
+/* Importa a fonte Roboto do Google Fonts para uso no documento */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset de Estilos Padrão */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Calcula a largura e altura incluindo preenchimento e borda */
+}
+
+/* Estilos Globais */
+html, body {
+    height: 100%; /* Define a altura do HTML e do corpo como 100% */
+}
+
+/* Estilos para o menu */
+.menu {
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 10px 0; /* Adiciona preenchimento interno */
+    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto */
+}
+
+.menu ul {
+    list-style-type: none; /* Remove marcadores de lista */
+    text-align: center; /* Centraliza horizontalmente */
+}
+
+.menu ul li {
+    display: inline; /* Exibe os itens do menu em linha */
+    margin-right: 20px; /* Adiciona espaçamento entre os itens */
+}
+
+.menu ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: bold; /* Define a fonte em negrito */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    padding: 5px 10px; /* Adiciona preenchimento interno */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.menu ul li a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para a área de conteúdo */
+.content {
+    height: calc(100% - 20px); /* Calcula a altura da área de conteúdo subtraindo 20px */
+    display: flex; /* Usa flexbox para alinhar elementos */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+}
+
+/* Estilos para o contêiner */
+.container {
+    border: 1px solid #a7a7a7; /* Define uma borda de 1px sólida de cor cinza */
+    padding: 20px; /* Adiciona preenchimento interno de 20px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    text-align: center; /* Centraliza o texto */
+    background-color: #acacac; /* Define a cor de fundo como cinza claro */
+}
+
+/* Estilos para o formulário de login */
+.login-form {
+    max-width: 300px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: #dddddd; /* Cor de fundo */
+    padding: 20px; /* Adiciona preenchimento interno */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%; /* Define a largura como 100% */
+    padding: 10px; /* Adiciona preenchimento interno */
+    margin: 8px 0; /* Adiciona margem */
+    display: inline-block; /* Exibe em linha */
+    border: 1px solid #ccc; /* Adiciona borda */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    box-sizing: border-box; /* Calcula largura incluindo preenchimento e borda */
+}
+
+.login-form button {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 14px 20px; /* Adiciona preenchimento interno */
+    margin: 8px 0; /* Adiciona margem */
+    border: none; /* Remove borda */
+    border-radius: 4px; /* Adiciona cantos arredondados */
+    cursor: pointer; /* Altera o cursor para apontador */
+    width: 100%; /* Define a largura como 100% */
+}
+
+.login-form button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    min-height: 60px; /* Altura mínima do rodapé */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Adiciona preenchimento interno */
+    font-family: "Roboto", sans-serif; /* Aplica a fonte Roboto */
+    color: white; /* Cor do texto do rodapé */
+}
+
+.footer-content {
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Ajusta o conteúdo para uma coluna */
+    text-align: center; /* Centraliza o texto */
+}
+
+.footer-content p {
+    font-size: 16px; /* Tamanho da fonte dos parágrafos */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
